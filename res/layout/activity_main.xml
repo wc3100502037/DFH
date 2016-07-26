@@ -1,0 +1,303 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    
+     <LinearLayout 
+       android:orientation="vertical"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:id="@+id/leftpane"
+       android:layout_weight="3">
+       
+      <LinearLayout 
+       android:orientation="vertical"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:layout_weight="0.9">  
+       
+       <RelativeLayout 
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="horizontal"
+              android:layout_weight="1">
+        <ImageView
+           android:id="@+id/picsetting"
+           android:layout_width="30dp"
+           android:layout_height="fill_parent"
+           android:background="@drawable/timesetting"
+           android:layout_weight="0.9"/>
+        <Button 
+             android:id="@+id/timesetting"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1"
+             android:layout_toRightOf="@+id/picsetting"
+             android:gravity="center_vertical"
+             android:background="@android:color/transparent"
+             android:textSize="15sp"
+             android:textColor="#ffffff"
+             android:text="落种时隔设置"/>
+        
+        </RelativeLayout>
+        
+        <RadioGroup 
+           android:id="@+id/setMode"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:orientation="horizontal"
+           android:layout_weight="1">
+             <RadioButton 
+                 android:id="@+id/Automode"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:text="自动"
+                 android:checked="true"
+                 android:layout_weight="1"/>
+             <RadioButton 
+                 android:id="@+id/Manulmode"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:text="手动"
+                 android:layout_weight="1"/>
+           </RadioGroup>     
+         </LinearLayout>
+        
+       <Button 
+           android:id="@+id/forward"
+           android:layout_width="100dp"
+           android:layout_height="fill_parent"
+           android:layout_gravity="center_horizontal"
+           android:layout_weight="1"
+           android:background="@drawable/forward1"
+           />
+       <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="1"
+           android:orientation="horizontal">
+
+           <Button
+               android:id="@+id/Left"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:background="@drawable/left"
+               android:layout_weight="1"
+              />
+           <Button
+               android:id="@+id/Stop"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:background="@drawable/stopbutton"
+               android:layout_weight="1"
+              />
+           
+
+           <Button
+               android:id="@+id/Right"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:layout_weight="1"
+               android:background="@drawable/right"
+              />
+
+         </LinearLayout>
+        <Button 
+            android:id="@+id/Back"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/back"
+            android:layout_gravity="center_horizontal"
+       />     
+   </LinearLayout> 
+ <!-- ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd -->
+     <LinearLayout 
+         android:id="@+id/middlepane"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:orientation="vertical"
+         android:layout_weight="4">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:background="@drawable/jsdx"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.35"/>
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            
+            android:layout_weight="1"/>
+        
+          <LinearLayout 
+              android:id="@+id/KTLayout"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_weight="1">
+          <ImageButton 
+              android:id="@+id/KTButtonUp"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/arrowup"
+              android:layout_weight="1"/>
+          <ImageButton 
+              android:id="@+id/KTButtonDown"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/arrowdown"
+              android:layout_weight="1"/>
+              
+          </LinearLayout>
+          
+          <LinearLayout
+              android:id="@+id/SGLayout"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              
+              android:layout_weight="1">
+          <ImageButton 
+              android:id="@+id/SGButtonUp"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+               android:background="@drawable/arrowup"
+              android:layout_weight="1"/>
+          <ImageButton 
+              android:id="@+id/SGButtonDown"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/arrowdown"
+              android:layout_weight="1"/>
+          
+           </LinearLayout>
+           
+          <LinearLayout
+              android:id="@+id/SEEDLayout"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_weight="1">
+          <ImageButton 
+              android:id="@+id/SEEDRun"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/start"
+              android:layout_weight="1"/>
+          <ImageButton 
+              android:id="@+id/SEEDStop"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/stop"
+              android:layout_weight="1"/>
+          </LinearLayout>
+         
+         
+     </LinearLayout>
+     
+   
+   <!--ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd-->    
+       
+       <LinearLayout 
+           android:orientation="vertical"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:id="@+id/rightpane"
+           android:paddingLeft="65dp"
+           android:layout_weight="2.5">
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.8"/>
+        
+       
+        
+        <RelativeLayout 
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="horizontal"
+              android:layout_weight="1">
+         <ImageView 
+             android:id="@+id/picdistance"
+             android:layout_width="50dp"
+             android:layout_height="fill_parent"
+             android:background="@drawable/distance1"
+             
+             android:layout_weight="100"/>
+         <TextView 
+             android:id="@+id/Distance"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1"
+             android:layout_toRightOf="@+id/picdistance"
+             android:gravity="center_vertical"
+             android:textSize="20sp"
+             android:textColor="#ffff00"
+             android:text="  行程："/>
+          </RelativeLayout>
+          
+          
+          
+          <RelativeLayout 
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="horizontal"
+              android:layout_weight="1">
+           <ImageView 
+             android:id="@+id/picseed"
+             android:layout_width="50dp"
+             android:layout_height="fill_parent"
+             android:background="@drawable/seed1"
+             android:layout_weight="100"/>
+              
+         <TextView 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1"
+             android:layout_toRightOf="@+id/picseed"
+             android:gravity="center_vertical"
+             android:textSize="20sp"
+             android:id="@+id/SeedNum"
+             android:textColor="#ffff00"
+             android:text="  落下种子数："/>  
+          </RelativeLayout>
+         
+      
+          
+          <RelativeLayout 
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="horizontal"
+              android:layout_weight="1">
+           <ImageView 
+             android:id="@+id/picwarning"
+             android:layout_width="50dp"
+             android:layout_height="fill_parent"
+         
+             android:background="@drawable/warning1"
+             android:layout_weight="100"/>
+            <TextView 
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_toRightOf="@+id/picwarning"
+              android:layout_alignBaseline="@+id/picwarning"
+              android:layout_weight="1000"
+              android:text="  警告"
+              android:gravity="center_vertical"
+              android:textSize="25sp"
+              android:textColor="#ff3300"
+             />
+           
+          </RelativeLayout>
+      
+         <TextView 
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:layout_weight="1"
+                 android:gravity="bottom|right"
+                 android:textColor="#ff0000"
+                 android:text="第一届“东方红”杯全国智能农机大赛
+                                                                                                              江苏大学国家水泵中心           "/>
+         </LinearLayout>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->       
+</LinearLayout>

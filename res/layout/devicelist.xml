@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="已配对设备："
+        android:background="#666"
+        android:textColor="#fff"
+        android:paddingLeft="5dp"/>
+    <ListView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/paired_device"
+        android:layout_weight="1"
+        android:stackFromBottom="true">
+    </ListView>
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:background="#666"
+        android:text="新设备"
+        android:paddingLeft="5dp"/>
+    <ListView 
+        android:id="@+id/unpaired_device"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:stackFromBottom="true">
+        
+    </ListView>
+    <Button 
+        android:id="@+id/start_scan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="开始扫描"/>
+
+</LinearLayout>
